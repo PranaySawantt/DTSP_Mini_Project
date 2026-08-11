@@ -1,0 +1,24 @@
+DTSP MINI PROJECT
+=======================================================
+
+Topic: FIR Low-Pass Filtering of Voice Signals
+
+Main Input: input/voice1.wav
+Secondary Test Input: input/voice2.wav
+
+Main Filter:
+  Type: FIR Low Pass
+  Order: 101
+  Cutoff: 4000 Hz
+  Sampling Rate: 48000 Hz
+
+Voice 2 Analysis:
+  Used as a second/noisier test recording.
+  Power above 4 kHz before filtering: 1.062%
+  Power above 4 kHz after filtering: 0.039%
+
+Filter Order Comparison:
+  Order 31: 7.715 ms
+  Order 61: 8.921 ms
+  Order 101: 8.855 ms
+  Order 151: 11.410 ms
